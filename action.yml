@@ -1,0 +1,48 @@
+name: 'Continuous Deployment'
+description: ''
+branding:
+  icon: anchor
+  color: orange
+inputs:
+  app_name:
+    description: test
+    required: true
+  deployment_repo:
+    description: test
+    required: true
+  deployment_repo_token:
+    description: test
+    required: true
+  deployment_repo_yaml_paths:
+    description: test
+    required: true
+  deployment_repo_yaml_imgtag_key:
+    description: test
+    required: true
+  image_owner:
+    description: test
+    required: true
+  image_repo:
+    description: test
+    required: true
+  image_tag:
+    description: test
+    required: true
+  docker_build_registry_password:
+    description: test
+    required: true
+  docker_build_registry_username:
+    description: test
+    required: true
+  docker_build_dockerfile_path:
+    description: test
+    required: true
+  docker_build_context_path:
+    description: test
+    required: true
+  environment:
+    description: test
+    required: true
+runs:
+  using: "docker"
+  image: "Dockerfile"
